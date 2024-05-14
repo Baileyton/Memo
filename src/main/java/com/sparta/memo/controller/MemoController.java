@@ -41,8 +41,7 @@ public class MemoController {
                 .map(MemoResponseDto::new).toList();
 
         return responseList;
-    }
-
+    }'
     @PutMapping("/memos/{id}")
     public Long updateMemo(@PathVariable Long id, @RequestBody MemoRequestDto requestDto) {
         // 해당 메모가 DB에 존재하는지 확인
